@@ -1,0 +1,509 @@
+=transition($param: all, $time: 1s, $func: ease-in-out)
+  -webkit-transition: $param $time $func
+  -moz-transition: $param $time $func
+  -ms-transition: $param $time $func
+  transition: $param $time $func
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+strong, b 
+  font-weight: bold
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section 
+  display: block
+body 
+  line-height: 1
+ol, ul 
+  list-style: none
+blockquote, q 
+  quotes: none
+blockquote:before, blockquote:after,
+q:before, q:after 
+  content: ''
+  content: none
+table 
+  border-collapse: collapse
+  border-spacing: 0
+
+button
+  background: none
+  border: none
+  
+button:focus, input:focus
+  outline: none
+
+a
+  font: 15px 'Roboto-regular', sans-serif
+  text-decoration: none
+  &:hover, &:focus
+    text-decoration: none
+    background: transparent
+
+/*bootstrap reset*/
+
+.navbar
+  margin-bottom: 0px
+
+.nav > li > a:hover, .nav > li > a:focus
+  background-color: transparent
+
+.navbar-toggle 
+  float: none
+  span
+    background: #fff
+
+.navbar-collapse
+  border: none
+  box-shadow: none
+
+/*Fonts*/
+
+@font-face
+  font-family: "DIN-Next-bold"
+  src: url("../fonts/DINNextW1G-Bold.otf")
+
+@font-face
+  font-family: "Roboto-bold"
+  src: url("../fonts/Roboto-Bold_1.ttf")
+
+@font-face
+  font-family: "Roboto-medium"
+  src: url("../fonts/Roboto-Medium.ttf")
+
+@font-face
+  font-family: "Roboto-regular"
+  src: url('../fonts/Roboto-Regular.ttf')
+
+@font-face 
+  font-family: "Roboto-italic",
+  src: url('../fonts/Roboto-Italic_0.ttf')    
+
+@font-face
+  font-family: "DriodSerif"
+  src: url('../fonts/DINNextW1G-Italic.otf')
+
+@font-face
+  font-family: "Lato-Bold"
+  src: url('../fonts/Lato-Bold.ttf')      
+
+/*Base Style*/
+
+body
+  background: #fcfcfc
+  font: 13px "Roboto-regular", sans-serif
+  color: #212121
+
+h1, h2, h3, h4, h5
+  color: #212121
+
+h1
+  font: bold 50px 'DIN-Next-bold', 'sans-serif'
+  text-transform: uppercase
+
+h2
+  font: bold 27px 'Roboto-bold', 'sans-serif'
+
+h3
+  font: bold 37px 'DIN-Next-bold', 'sans-serif'
+
+h4
+  font: 500 16px 'Roboto-medium', 'sans-serif' 
+
+h5
+  font: 500 17pt 'Roboto-medium', 'sans-serif'
+
+.button-style-1
+  background: #74b65f
+  padding: 22px 47px
+  text-align: center
+  display: block
+  text-transform: uppercase
+  font: 500 16px 'Roboto-medium', sans-serif
+  letter-spacing: 2px
+  &:hover
+    background: #649953
+
+button.active
+  background: #1383c2
+
+.button-style-3
+  padding: 29px 45px
+  background: #ffd409
+  font: 15px 'Roboto-regular', sans-serif
+  +transition(all, 0.2s, ease-in-out)
+  &:hover
+    background: #f17e00
+    +transition(all, 0.2s, ease-in-out)
+
+
+/*Site*/
+
+#wrapper
+  position: relative
+  overflow: hidden
+  min-height: 100%
+  min-width: 350px
+  background: #fcfcfc
+
+
+
+/*header*/
+
+.header-cart
+  .container
+    position: relative
+    &:before
+      content: " "
+      display: block
+      height: 3px
+      width: 99%
+      position: absolute
+      background: url('../img/shadow.png') no-repeat
+      background-size: cover
+      top: 98%
+      left: 7px
+    .logo
+      float: left
+      padding: 16px 13px
+    
+    .header-content
+      float: left
+      .header-cart-menu
+        background: #4e545a
+        width: 970px
+
+        .nav
+          #main-menu-2
+            ul
+              background: #4e545a
+              padding-left: 31px
+              li
+                &:first-child, &:last-child
+                  a 
+                    padding-left: 0px
+                a 
+                  color: #fff
+                  +transition(all, 0.2s, ease-in-out)
+                  &:hover
+                    color: #f17e00
+                    +transition(all, 0.2s, ease-in-out)
+      
+
+      .form-search
+        .search-block
+          width: 680px
+          float: left
+          .search-form
+            width: 100%
+            height: 54px
+            background: #f17e00
+            position: relative
+            padding-top: 18px
+            input
+              padding-left: 31px
+              width: 100%
+              color: #fff
+              background: #f17e00
+              border: none
+              font: 14px 'Roboto-regular', sans-serif
+              &::-webkit-input-placeholder
+                color: #ffffff
+              &::-moz-placeholder
+                color: #ffffff
+              &:focus::-webkit-input-placeholder 
+                color: transparent
+              &:focus::-moz-placeholder
+                color: transparent
+              &:focus:-moz-placeholder
+                color: transparent
+              &:focus:-ms-input-placeholder
+                color: transparent
+
+            button
+              position: absolute
+              width: 21px
+              height: 20px
+              background: url('../img/search.png') no-repeat
+              right: 18px
+              top: 16px
+              display: block
+              cursor: pointer
+
+        .order-block
+          width: 290px
+          float: right
+          .basket
+            width: 220px
+            height: 54px
+            background-color: #1383c2
+            padding: 9px 0 0 23px
+            position: relative
+            float: left
+            +transition(all, 0.3s, ease-in-out)
+            &:hover
+              background-color: #74b65f
+              +transition(all, 0.3s, ease-in-out)
+
+            span
+              font: 12px 'Roboto-regular', sans-serif
+              color: #fff
+              position: relative
+            i
+              position: relative  
+              &:before
+                content: " "
+                display: block
+                position: absolute
+                height: 30px
+                width: 55px
+                background: url('../img/luggage.png') no-repeat
+                right: -73px
+                top: -11px
+            
+
+        .list
+          display: block
+          height: 54px
+          float: right
+          width: 70px
+          background: #ededed url('../img/list.png') no-repeat
+          background-position: center center
+          cursor: pointer
+          +transition(all, 0.3s, ease-in-out)
+          &:hover
+            background: #ffb900 url('../img/list.png') no-repeat
+            background-position: center center
+            +transition(all, 0.3s, ease-in-out)
+
+
+.title-block
+  padding: 18px 23px
+  overflow: hidden
+  border-bottom: 1px solid #cecece
+  h2
+    float: left
+    padding-left: 6px
+
+  .bread-crumb
+    float: right
+    padding-top: 10px
+    ul
+      overflow: hidden
+      li 
+        float: left
+        padding: 0 12px
+        position: relative
+        &:not(:last-child):before
+          content: " "
+          display: block
+          width: 9px
+          height: 1px
+          background: #1383c2
+          position: absolute
+          right: -4.5px 
+          top: 9px
+        a 
+          font: 13px 'Roboto-regular', sans-serif
+          color: #1383c2
+          text-decoration: underline
+        a.active
+          color: #4e545a
+          text-decoration: none
+          cursor: default
+
+.footer 
+  min-height: 126px
+  background: #212121
+  padding-top: 36px
+  .download
+    .block
+      width: 189px
+      height: 50px
+      border: 2px solid #4e545a
+      border-radius: 5px
+      float: left
+
+      a 
+        font: bold 10px 'Lato-Bold', sans-serif
+        color: #4e545a
+        text-transform: uppercase
+        padding-left: 58px
+        padding-top: 9px
+        position: relative
+        display: block
+        &:before
+          content: " "
+          display: block
+          position: absolute
+
+        span
+          font-size: 18px
+
+    .google-play
+      margin-right: 12px
+      &:hover
+        border-color: #f17e00
+        a 
+          color: #f17e00
+          &:before
+            background: url('../img/play_market_hover.png') no-repeat 
+      a:before
+        background: url('../img/play_market.png') no-repeat
+        width: 36px
+        height: 38px
+        left: 6px
+        top: 5px
+
+    .app-store
+      &:hover
+        border-color: #f17e00
+        a 
+          color: #f17e00
+          &:before
+            background: url('../img/app_store_hover.png') no-repeat  
+      a:before
+        background: url('../img/app_store.png') no-repeat
+        width: 36px
+        height: 32px
+        left: 6px
+        top: 5px
+
+  .footer-menu 
+    ul
+      overflow: hidden
+      padding-left: 35px 
+      li 
+        float: left
+        a
+          padding: 5px 10px
+          display: inline-block
+          color: #aeaeae
+          font: 14px 'Roboto-regular', sans-serif
+          +transition(all, 0.2s, ease-in-out)
+          &:hover
+            color: #f17e00
+            +transition(all, 0.2s, ease-in-out)
+
+  .link
+    color: #3e4246
+    font: 14px 'Roboto-regular', sans-serif
+    display: inline-block
+    margin-top: 20px
+  
+@media (min-width: 768px)
+  .container
+    width: 768px
+
+@media (min-width: 992px)
+  .container
+    width: 992px
+
+@media (min-width: 1200px)
+  .container
+    width: 1170px
+
+
+@media(max-width: 1200px)
+  .header-cart
+    .container:before
+      display: none 
+    .header-content 
+      .header-cart-menu
+        width: 792px
+        .nav #main-menu-2 ul
+          padding-left: 16px
+
+      .form-search .search-block
+        width: 503px
+
+  .nav > li > a
+    padding: 14px 11px
+
+  .cart-content .button-block .button-control .button-cart
+    padding: 20px
+    margin-top: 31px
+
+  .footer .download .block
+    margin-bottom: 10px
+
+@media(max-width: 991px)
+  .header-cart
+    .container 
+      .logo
+        text-align: center
+        float: none
+
+      .header-content
+        .header-cart-menu
+          width: 100%
+          .nav #main-menu-2 ul
+            padding-left: 0px
+            li
+              text-align: center
+              a 
+                padding: 10px 11px !important
+
+
+
+        .form-search .search-block
+          width: 477px
+
+  .footer
+    padding-bottom: 10px 
+    .footer-menu ul
+      padding-left: 0px
+
+    .download
+      text-align: center
+      .block
+        float: none
+        margin: 10px
+        display: inline-block
+
+    .link
+      display: block
+      text-align: center 
+
+
+@media (max-width: 767px)
+  .header-cart
+    .container 
+      .header-content
+        float: none 
+        .form-search 
+          .search-block
+            width: 100%
+          .order-block
+            width: 100%
+            float: none
+            position: relative
+            .basket
+              width: 100%
+            .list 
+              position: absolute
+              right: 0px
+              top: 54px
+  
+  .footer .footer-menu ul li
+    text-align: center
+    display: block
+    float: none

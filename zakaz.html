@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Город Уюта</title>
+
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style-2.css">
+      <link rel="stylesheet" type="text/css" href="css/zakaz.css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+  <body>
+    
+    <div id="wrapper">
+    
+    <header class="header-cart">
+      <div class="container">
+      
+        <div class="logo">
+            <a href="#"><img src="img/logo-small.png" alt=""></a>
+        </div>  
+        
+        <div class="header-content">
+        <div class="header-cart-menu">
+          <nav class="nav navbar">
+            <div class="container-fluid">
+
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-2" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+               </button>
+              </div>
+
+                <div class="collapse navbar-collapse" id="main-menu-2">
+                  <ul class="nav navbar-nav clearfix">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Доставка и разгрузка</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Бонусная карта</a></li>
+                    <li><a href="#">Обучение Knauf</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="form-search clearfix">
+            <div class="search-block">
+              <form method="post" action="zakaz.html" class="search-form">
+                <input type="text" name="search" placeholder="Поиск по сайту">
+                <button type="submit"></button>
+              </form>
+            </div>
+            
+            <div class="order-block">
+                 <div class="basket">
+                   <span>Ваш грузовик <br>покупок пока пуст</span>
+                   <i></i>
+                 </div>
+                 <div class="list"></div>
+            </div>  
+          </div>
+        </div>  
+      </div>
+    </header>
+    
+    <div class="zakaz">
+      <div class="container">
+        <div class="title-block clearfix">
+            <h2 class="title">Заказ</h2>
+            <div class="bread-crumb">
+              <ul>
+                <li><a href="#">Главная страница</a></li>
+                <li><a href="#" class="active">Оформление заказа</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <form method="post" action="zakaz.html" class="zakaz-form">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="zakaz-full-name">Фамилия Имя Отчество<span>*</span></label>
+                  <input type="text" id="zakaz-full-name" name="zakaz-full-name"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="row"> 
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="zakaz-phone">Телефон<span>*</span></label>
+                  <input type="text" id="zakaz-phone" name="zakaz-phone"/>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="zakaz-email">Email<span>*</span></label>
+                  <input type="email" id="zakaz-email" name="zakaz-email"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group">
+                <label for="zakaz-info">Дополнительная информация</label>
+                <textarea id="zakaz-info" name="zakaz-info">
+                  
+                </textarea>
+              </div>
+            </div>
+            
+            <div class="button-control">
+              <button type="submit" class="button-style-3">Оформить заказ</button>
+            </div>  
+
+          </form>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-3 ">
+            <div class="download clearfix">
+              <div class="block google-play">
+                <a href="#">скачать для Android <br><span>Google play</span></a>
+              </div>
+              <div class="block app-store">
+                <a href="#">скачать для ios <br><span>app store</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-7">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и разгрузка</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Бонусная карта</a></li>
+                <li><a href="#">Обучение Knauf</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2">
+            <a href="#" class="link">&copy; 2016 Город уюта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+
+  </body>
+</html>

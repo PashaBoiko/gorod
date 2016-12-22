@@ -1,0 +1,22 @@
+.blog-page .block-page-content {
+  padding-top: 27px;
+  padding-left: 11px; }
+  .blog-page .block-page-content div.date {
+    color: #a1a1a1;
+    font: 13px "Roboto-regular", sans-serif; }
+  .blog-page .block-page-content h4 {
+    margin-bottom: 6px; }
+  .blog-page .block-page-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 19px; }
+  .blog-page .block-page-content p {
+    font: 13px "Roboto-regular", sans-serif;
+    color: #212121;
+    margin-bottom: 21px;
+    line-height: 19px; }
+
+.footer {
+  margin-top: 25px; }
+
+/*# sourceMappingURL=blog-page.css.map */

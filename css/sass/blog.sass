@@ -1,0 +1,86 @@
+.blog-content
+	padding-top: 25px
+	ul.list 
+		li
+			margin-bottom: 35px
+			.img-block
+				padding-top: 11px
+				text-align: center
+			.bloc-text-block
+				padding-left: 9px
+				h4
+					margin-bottom: 8px
+					margin-top: 1px
+				
+				p 
+					margin-bottom: 18px
+					line-height: 17px
+
+				p, span, a 
+					font: 14px 'Roboto-regular', sans-serif
+					color: #212121
+				span.date
+					color: #a1a1a1
+					display: block
+				a 
+					color: #1383c2
+
+	.navigation
+		border-top: 1px solid #cecece
+		width: 100%
+		padding-top: 21px
+		padding-bottom: 17px
+		ul
+			float: right
+			li
+				float: left
+				color: #1383c2
+				a 
+					display: inline-block
+					padding: 0 8px
+					text-decoration: underline
+					font: 14px 'Roboto-regular', sans-serif
+
+			li.space
+				a
+					text-decoration: none
+
+			li.left, li.right
+				a
+					font-size: 10px
+					padding-top: 2px
+
+			li.active a
+				color: #4e545a
+
+.footer
+	margin-top: 0px	
+
+@media(max-width: 1200px)
+	.blog-content ul li 
+		.img-block
+			img
+				width: 100%
+				height: auto
+
+		.bloc-text-block
+			padding-left: 15px
+
+
+@media(max-width: 768px)
+	.blog-content ul li 
+		.img-block
+			margin-bottom: 15px
+			img
+				width: 50%
+	.partners-content ul li 
+		.bloc-text-block
+			padding: 0 15px 
+			h4
+				text-align: center	
+
+@media(max-width: 400px)
+	.blog-content ul li 
+		.img-block
+			img
+				width: 90%

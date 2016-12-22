@@ -1,0 +1,125 @@
+.cart-content .title-block {
+  padding: 18px 23px;
+  overflow: hidden;
+  border-bottom: 1px solid #cecece; }
+  .cart-content .title-block h2 {
+    float: left;
+    padding-left: 6px; }
+  .cart-content .title-block .bread-crumb {
+    float: right;
+    padding-top: 10px; }
+    .cart-content .title-block .bread-crumb ul {
+      overflow: hidden; }
+      .cart-content .title-block .bread-crumb ul li {
+        float: left;
+        padding: 0 12px;
+        position: relative; }
+        .cart-content .title-block .bread-crumb ul li:not(:last-child):before {
+          content: " ";
+          display: block;
+          width: 9px;
+          height: 1px;
+          background: #1383c2;
+          position: absolute;
+          right: -4.5px;
+          top: 9px; }
+        .cart-content .title-block .bread-crumb ul li a {
+          font: 13px "Roboto-regular", sans-serif;
+          color: #1383c2;
+          text-decoration: underline; }
+        .cart-content .title-block .bread-crumb ul li a.active {
+          color: #4e545a;
+          text-decoration: none; }
+.cart-content .cart-block {
+  padding-top: 21px; }
+  .cart-content .cart-block ul li.title {
+    padding-bottom: 20px; }
+    .cart-content .cart-block ul li.title div {
+      font: 500 17px "Roboto-medium", sans-serif;
+      color: #212121;
+      text-align: center; }
+    .cart-content .cart-block ul li.title div.text-left {
+      text-align: left; }
+  .cart-content .cart-block ul li div .cart-good-title {
+    padding-left: 15px; }
+  .cart-content .cart-block ul li div p {
+    padding: 21px 0;
+    font: 14px "Roboto-regular", sans-serif;
+    color: #212121; }
+  .cart-content .cart-block ul li div a {
+    color: #ff0101;
+    padding: 21px 0;
+    font: 14px "Roboto-regular", sans-serif;
+    display: block;
+    text-decoration: underline;
+    padding-right: 33px; }
+  .cart-content .cart-block ul li .col-block {
+    display: inline-block;
+    position: relative;
+    padding-top: 12px; }
+    .cart-content .cart-block ul li .col-block .col {
+      width: 30px;
+      display: inline-block;
+      height: 31px;
+      border: 2px solid #e8e8e8;
+      padding-left: 9px; }
+    .cart-content .cart-block ul li .col-block button {
+      height: 31px;
+      width: 35px;
+      background: #e8e8e8;
+      color: #50565c;
+      font-weight: bold; }
+    .cart-content .cart-block ul li .col-block button.left-button {
+      border-radius: 4px 0px 0px 4px;
+      margin-right: -4px; }
+    .cart-content .cart-block ul li .col-block button.right-button {
+      border-radius: 0px 4px 4px 0px;
+      margin-left: -4px; }
+  .cart-content .cart-block ul li:not(.title) {
+    margin-bottom: 26px; }
+.cart-content .button-block .advertising {
+  padding: 40px 24px;
+  background: #ededed; }
+  .cart-content .button-block .advertising p {
+    font: 15px "Roboto-regular", sans-serif;
+    color: #4e545a; }
+    .cart-content .button-block .advertising p a {
+      color: #1383c2;
+      text-decoration: underline; }
+.cart-content .button-block .button-control .clean-basket {
+  color: #1383c2;
+  text-decoration: underline;
+  font: 15px "Roboto-regular", sans-serif;
+  display: block;
+  text-align: right;
+  padding-top: 52px; }
+.cart-content .button-block .button-control .button-cart {
+  padding: 29px 45px;
+  background: #ffd409;
+  font: 15px "Roboto-regular", sans-serif;
+  margin-left: 30px;
+  margin-top: 23px; }
+
+@media(max-width: 1200px) {
+  .nav > li > a {
+    padding: 10px 11px; }
+
+  .cart-content .button-block .button-control .button-cart {
+    padding: 20px;
+    margin-top: 31px; } }
+@media(max-width: 991px) {
+  .cart-content .button-block .button-control {
+    text-align: center; }
+    .cart-content .button-block .button-control .button-cart {
+      margin: 20px 0; }
+    .cart-content .button-block .button-control .clean-basket {
+      text-align: center; } }
+@media (max-width: 767px) {
+  .cart-content .cart-block ul li.title {
+    display: none; }
+  .cart-content .cart-block ul li div div {
+    text-align: center; }
+  .cart-content .cart-block ul li div a {
+    padding-right: 0px; } }
+
+/*# sourceMappingURL=cart_new.css.map */

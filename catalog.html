@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Город Уюта</title>
+
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/catalog.css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+  <body>
+    
+    <div id="wrapper">
+      <header class="header">
+        <div class="top-menu">
+          <div class="container">
+            <div class="header-nav">
+              <nav class="nav navbar">
+                <div class="container-fluid">
+
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   </button>
+                  </div>
+
+                  <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="nav navbar-nav navbar-left">
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Доставка и разгрузка</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                      <li><a href="#">Бонусная карта</a></li>
+                      <li><a href="#">Обучение Knauf</a></li>
+                      <li><a href="#">Блог</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+              <div class="header-order">
+                 <div class="basket">
+                   <span>Ваш грузовик <br>покупок пока пуст</span>
+                   <i></i>
+                 </div>
+                 <div class="list"></div>
+              </div>  
+            </div>
+          </div>
+        </div>
+        
+        <div class="header-inside">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-4 logo-content">
+                <div class="logo">
+                  <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="phone-block">
+                  <p class="phone-number">+7 (495) 797-41-60</p>
+                  <span>Без выходных с 8:00 до 21:00</span>
+                </div>
+                <div class="social-block">
+                  <ul>
+                    <li><a class="sprite sprite-social_vk" href="#"></a></li>
+                    <li><a class="sprite sprite-social_f" href="#"></a></li>
+                    <li><a class="sprite sprite-social_un" href="#"></a></li>
+                    <li><a class="sprite sprite-social_odn" href="#"></a></li>
+                    <li><a class="sprite sprite-social_phone" href="#"></a></li>
+                    <li><a class="sprite sprite-social_phone2" href="#"></a></li>     
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-9 col-sm-8">
+                <div class="category-content">
+                  <ul class="good-list">
+                  <li class="good sprite-plaster dropdown">
+                    <a href="#" data-toggle="dropdown" id="sprite-plaste" class="dropdown-toggle">Штукатурка</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-plaste">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul>  
+                  </li>
+                  <li class="good sprite-bottle"><a data-toggle="dropdown" id="sprite-bottle" class="dropdown-toggle" href="#">Шпаклёвка</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-bottle">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul>  
+                  </li>
+                  <li class="good sprite-gypsum"><a href="#" id="sprite-gypsum" data-toggle="dropdown" class="dropdown-toggle">Гипсокартон</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-gypsum">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul> 
+                  </li>
+
+                  <li class="good sprite-kley"><a id="sprite-kley" data-toggle="dropdown" class="dropdown-toggle" href="#">Клей</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-kley">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul> 
+                  </li>
+                  <li class="good sprite-corner"><a href="#" id="sprite-corner" data-toggle="dropdown" class="dropdown-toggle big-str">Профили для ГКЛ Уголки. Маяки</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-corner">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul> 
+                  </li>
+
+                  <li class="good sprite-kub"><a href="#" id="sprite-kub" data-toggle="dropdown" class="dropdown-toggle big-str">Стеновые &nbsp;перегородки</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-kub">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul> 
+                  </li>
+
+                  <li class="good sprite-primer"><a href="#" id="sprite-primer" data-toggle="dropdown" class="dropdown-toggle big-str">Грунтовки Бетоноконтакт</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-primer">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="good sprite-gidro"><a href="#" id="sprite-gidro" data-toggle="dropdown" class="dropdown-toggle">Гидроизоляция</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-gidro">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul>
+                  </li>
+                  <li class="good sprite-heater"><a id="sprite-heater" href="#" data-toggle="dropdown" class="dropdown-toggle">Утеплитель</a>
+                     <ul class="dropdown-menu" aria-labelledby="sprite-heater">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="good sprite-cement"><a id="sprite-cement" href="#" data-toggle="dropdown" class="dropdown-toggle">Цемент</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-cement">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul>
+                  </li>
+                  <li class="good sprite-colocol"><a href="#" id="sprite-colocol" data-toggle="dropdown" class="dropdown-toggle">Керамзит</a>
+                    <ul class="dropdown-menu" aria-labelledby="sprite-colocol">
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                      <li><a href="#">item</a></li>
+                    </ul>
+                  </li>
+                  <li class="good sprite-strela "><a href="#" class="dropdown-toggle">Смотреть все категории</a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+       <div class="filter-search">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="filter">
+                <a href="#" class="filter-catalog">Фильтр по параметрам</a>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <form method="post" action="catalog.html" class="search-form">
+                <input type="text" name="search" placeholder="Поиск по сайту">
+                <button type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="catalog">
+        <div class="container">
+          <div class="title-block clearfix">
+            <h2 class="title">Штукатурки</h2>
+            <div class="bread-crumb">
+              <ul>
+                <li><a href="#">Главная страница</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#" class="active">Штукатурки</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="catalog-content">
+            <p class="text">Эпсилон окрестность категорически приводит к появлению подбур. Аржиллана, очевидно, упруго восстанавливает поглотительный агрегат. Не доказано, что органическое 
+            вещество нагревает фрактал, как и предполагалось.</p>
+
+            <p class="text">Подзолообразование флуктуационно растворяет межагрегатный минимум, и этот процесс может повторяться многократно. Неравенство Бернулли, вследствие 
+            пространственной неоднородности почвенного покрова, решительно сжимает гранулометрический анализ, как и предполагалось. Деградация усиливает невероятный 
+            тензиометр даже в том случае, если непосредственное наблюдение этого явления затруднительно.</p>
+            
+            <div class="catalog-inside-block clearfix">
+              <button type="button" class="show-menu">Фильтр</button>
+              <div class="catalog-goods">
+                <ul class="catalog-list catalog-widthout-border clearfix">
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info ">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content  deals">
+                          <span class="aktia">спецпредложения</span>
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content news">
+                          <span class="aktia">новинка</span>
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                 <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+
+                   <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                 <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+
+                   <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                 <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+
+                   <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+                 <li>
+                      <div>
+                        <img src="img/good.png" alt="">
+                      </div>
+
+                      <div class="good-info">
+                        <div class="good-title">Шпатлёвка  финишная белая Knauf</div>
+                        <div class="price-content">
+                          <h3 class="price">1 598<span>руб.</span></h3>
+                        </div>  
+                      </div>
+
+                      <div class="hover-block">
+                        <a href="#" class="text">Положить в грузовик покупок</a>
+                      </div>
+                  </li>
+
+                </ul>
+
+                <div class="navigation clearfix">
+                <ul>
+                  <li class="left"><a href="#"><i class="glyphicon glyphicon-arrow-left"></i></a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">6</a></li>
+                  <li class="space"><a href="#">...</a></li>
+                  <li><a href="#">12</a></li>
+                  <li class="right"><a href="#"><i class="glyphicon glyphicon-arrow-right"></i></a></li>
+                </ul>
+              </div>
+
+              </div>
+
+              <div class="sidebar">
+                <form method="post">
+                  <h4>Сортировка</h4>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-popularity" id="filter-popularity">
+                    <label for="filter-popularity">Популярность</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-price" id="filter-price">
+                    <label for="filter-price">Цена</label>
+                  </div>
+                  
+                  <h4>Марка</h4>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-knauf" id="filter-knauf">
+                    <label for="filter-knauf">Knauf</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-unis" id="filter-unis">
+                    <label for="filter-unis">Unis</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-russian" id="filter-russian">
+                    <label for="filter-russian">Руссиан</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-staratel" id="filter-staratel">
+                    <label for="filter-staratel">Старатели</label>
+                  </div>
+
+                   <div class="checkbox">
+                    <input type="checkbox" name="filter-volma" id="filter-volma">
+                    <label for="filter-volma">Волма</label>
+                  </div>
+
+                  <h4>Цена</h4>
+                  
+                  <div class="form-group">
+                    <input type="text" name="from" placeholder="От">
+                    <input type="text" name="to" placeholder="До">
+                  </div>
+
+                  <h4>Вес</h4>
+                  
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-10" id="filter-10">
+                    <label for="filter-10">10 кг.</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-25" id="filter-25">
+                    <label for="filter-25">25 кг.</label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-30" id="filter-30">
+                    <label for="filter-30">30 кг.</label>
+                  </div>
+
+                   <div class="checkbox">
+                    <input type="checkbox" name="filter-50" id="filter-50">
+                    <label for="filter-50">50 кг.</label>
+                  </div>
+                  
+                  <h4>Показать</h4>
+                  
+                  <div class="checkbox">
+                    <input type="checkbox" name="filter-spec" id="filter-spec">
+                    <label for="filter-spec">спецпредложения</label>
+                  </div>
+
+                   <div class="checkbox">
+                    <input type="checkbox" name="filter-now" id="filter-now">
+                    <label for="filter-now">только новинки</label>
+                  </div>
+                  
+                  <div class="button-container">
+                    <button type="submit">Сбросить фильтр</button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      
+       <div class="catalog-menu clearfix">
+          <div class="container">
+              <div class="block">
+                <ul>
+                  <li><a href="#">Штукатурка</a></li>
+                  <li><a href="#">Шпаклёвка</a></li>
+                  <li><a href="#">Гипсокартон</a></li>
+                  <li><a href="#">Клей</a></li>
+                </ul>
+              </div>
+              <div class="block">
+                <ul>
+                  <li><a href="#">Профили для ГКЛ...</a></li>
+                  <li><a href="#">Стеновые перегородки</a></li>
+                  <li><a href="#">Грунтовки, бетоноконтакт</a></li>
+                  <li><a href="#">Гидроизоляция</a></li>
+                </ul>
+              </div>
+              <div class="block">
+                <ul>
+                  <li><a href="#">Утеплитель</a></li>
+                  <li><a href="#">Полы</a></li>
+                  <li><a href="#">Цемент</a></li>
+                  <li><a href="#">Керамзит</a></li>
+                </ul>
+              </div>
+              <div class="block">
+                <ul>
+                  <li><a href="#">Металл</a></li>
+                  <li><a href="#">Пиломатериалы</a></li>
+                  <li><a href="#">Сетка и плёнка</a></li>
+                  <li><a href="#">Крепежи и свёрла</a></li>
+                </ul>
+              </div>
+
+              <div class="block">
+                <ul>
+                  <li><a href="#">Крепежи и свёрла</a></li>
+                  <li><a href="#">Электрика</a></li>
+                  <li><a href="#">Разное</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+       <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-3 ">
+              <div class="download clearfix">
+                <div class="block google-play">
+                  <a href="#">скачать для Android <br><span>Google play</span></a>
+                </div>
+                <div class="block app-store">
+                  <a href="#">скачать для ios <br><span>app store</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-7">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Доставка и разгрузка</a></li>
+                  <li><a href="#">Партнеры</a></li>
+                  <li><a href="#">Бонусная карта</a></li>
+                  <li><a href="#">Обучение Knauf</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2">
+              <a href="#" class="link">&copy; 2016 Город уюта</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.show-menu').click(function(){
+          $('.sidebar').toggleClass('active');
+        })
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,555 @@
+a:hover, a:focus
+  background-color: transparent
+
+.sidebar
+  display: none
+  width: 293px
+  background: #ededed
+  padding: 28px 0px 0px 35px
+  position: absolute
+  left: 0
+  top: 100%
+  z-index: 100
+  h4
+    text-transform: uppercase
+    margin-bottom: 17px
+  .checkbox-container
+    margin-bottom: 38px
+    .checkbox
+      margin-top: 0px
+      label
+        display: inline-block
+        cursor: pointer
+        position: relative
+        padding-left: 25px
+        margin-right: 15px
+        font: 13px 'Roboto-regular', sans-serif
+        color: #4e545a
+        padding-top: 3px
+        &:before
+          content: " "
+          display: inline-block
+          width: 16px
+          height: 16px
+          margin-right: 10px
+          position: absolute
+          left: 0
+          bottom: 1px
+          background-color: #fff
+          
+      input[type="checkbox"] 
+        display: none
+
+      input[type=checkbox]:checked + label:before
+        content: ""
+        background: url('../img/glaca.png') no-repeat
+        width: 19px
+        height: 19px
+        text-align: center
+        line-height: 15px
+
+  input[type="text"]
+    width: 165px
+    height: 27px
+    display: block
+    background: #fff
+    font: 13px 'Roboto-regular', sans-serif
+    color: #aeb0b2
+    margin-bottom: 8px
+    padding-left: 5px
+    border: none
+
+  .button-container 
+    margin-top: 43px
+    margin-bottom: 43px
+    button
+      padding: 11px 21px
+      background: #74b65f
+      color: #fff 
+      font: 15px 'Roboto-regular', sans-serif
+
+.show-sidebar
+  display: block
+
+.title-block
+  padding: 18px 23px
+  overflow: hidden
+  border-bottom: 1px solid #cecece
+  h2
+    float: left
+    padding-left: 6px
+
+  .bread-crumb
+    float: right
+    padding-top: 10px
+    ul
+      overflow: hidden
+      li 
+        float: left
+        padding: 0 12px
+        position: relative
+        &:not(:last-child):before
+          content: " "
+          display: block
+          width: 9px
+          height: 1px
+          background: #1383c2
+          position: absolute
+          right: -4.5px 
+          top: 9px
+        a 
+          font: 13px 'Roboto-regular', sans-serif
+          color: #1383c2
+          text-decoration: underline
+        a.active
+          color: #4e545a
+          text-decoration: none
+          cursor: default
+
+.item
+  .item-content
+    padding: 17px 30px
+    .list
+      padding-top: 25px
+      padding-bottom: 20px
+      border-bottom: 1px solid #cecece
+      li
+        font: 13px 'Roboto-regular', sans-serif
+        color: #212121
+        margin-bottom: 10px
+        div
+          display: inline
+        span
+          margin: 0 10px
+          width: 195px
+          height: 1px
+          display: inline-block
+          border-bottom: 1px dotted #3c3c3c
+      li:nth-child(2)
+        span
+          margin-left: 22px
+
+      li:nth-child(3)
+        span 
+          width: 148px
+
+      li:nth-child(4)
+        span
+          width: 203px
+
+    .price-block
+      padding-top: 28px
+      margin-bottom: 40px
+      h3
+        display: inline
+        span
+          font: 15px 'Roboto-regular', sans-serif
+          color: #858383
+          padding-left: 5px
+      p 
+        font: 13px 'Roboto-regular', sans-serif
+        color: #4e545a
+        padding-top: 10px
+        span
+          display: block
+      
+      .col-block
+        display: inline-block
+        position: relative 
+        padding-top: 12px
+        .col
+          width: 30px
+          display: inline-block
+          height: 31px
+          border: 2px solid #e8e8e8
+          padding-left: 9px
+        button
+          height: 31px
+          width: 35px
+          background: #e8e8e8
+          color: #50565c
+          font-weight: bold
+          &:hover
+            background: #ffd409
+
+        button.left-button
+          border-radius: 4px 0px 0px 4px
+          margin-right: -4px
+
+        button.right-button
+          border-radius: 0px 4px 4px 0px
+          margin-left: -4px
+
+    .add-to-basket
+      padding: 26px 21px 26px 84px 
+      background: #ffd409
+      font: 15px 'Roboto-regular', sans-serif
+      color: #212121
+      position: relative
+      &:before
+        content: " "
+        display: block
+        width: 52px
+        height: 28px
+        background: url('../img/luggage-black.png')
+        position: absolute
+        top: 21px
+        left: 15px
+      &:hover
+        background: #f17e00
+
+  .item-navigation
+    width: 100%
+    border-bottom: 1px solid #cecece
+    ul 
+      li 
+        float: left
+        position: relative
+        a 
+          display: block
+          padding: 17px 43px
+          font: 14px 'Roboto-medium', sans-serif
+          color: #4e545a
+          &:hover
+            color: #f17e00
+        &:not(:last-child):before
+          content: " "
+          display: block
+          width: 2px
+          height: 13px
+          background: #d1d1d1
+          position: absolute
+          right: 0px
+          top: 19px
+
+#slider
+  width: 100%
+
+.slider-image 
+  height: 274px
+  display: block
+  width: 100%
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  position: relative
+  &:before
+    content: " "
+    display: block
+    width: 18px
+    height: 18px
+    background: url('../img/search-2.png') no-repeat
+    position: absolute
+    right: 10px
+    bottom: 10px
+
+.slider-wrapper
+  width: 100px
+  margin-left: 20px
+  float: left
+  text-align: center
+
+
+.slider
+  height: 262px
+  overflow: hidden
+
+.slider-item
+  display: inline-block
+  width: 120px
+  height: 120px
+  background-size: cover
+  background-position: center
+  margin-bottom: 10px
+  margin-top: 0px
+  cursor: pointer
+  
+
+.slider-content 
+  position: relative
+  top: 0px
+  transition: all 1s ease-in
+
+.slider-up-arrow, .slider-down-arrow 
+  display: inline-block
+  height: 15px
+  width: 26px
+  cursor: pointer
+.slider-up-arrow
+  background: url('../img/slaider-top.png') no-repeat
+  
+.slider-down-arrow
+  background: url('../img/slaider-bottom.png') no-repeat
+
+
+.show-all
+  padding-top: 18px
+  padding-bottom: 20px
+  text-align: center
+  a 
+    font: bold 13px 'Roboto-bold', sans-serif
+    color: #212121
+    letter-spacing: 2px
+    text-transform: uppercase
+    letter-spacing: 2px
+
+.catalog-goods
+  .catalog-list 
+    li 
+      width: 20%
+      min-height: 342px
+      border: 1px solid #cecece
+      position: relative
+      padding: 0 35px
+      padding-top: 39px
+      float: left
+      text-align: center
+      
+      .hover-block
+        display: block
+        padding: 197px 30px 0
+        text-align: center
+        color: #212121
+        display: none
+        a 
+          font: 13px 'Roboto-regular', sans-serif
+          position: relative
+          color: #212121
+          display: block
+          &:before
+            content: " "
+            display: block
+            width: 52px
+            height: 28px
+            background: url('../img/luggage-black.png') no-repeat
+            position: absolute
+            left: 50%
+            margin-left: -26px
+            top: -40px
+
+
+
+      &:hover div.hover-block
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: 10
+        background: #ffb900
+        left: 0
+        top: 0
+        right: 0
+
+    
+
+      .good-info
+        position: absolute
+        width: 100%
+        left: 0px
+        right: 0px
+        bottom: 13px
+        .good-title
+          font: 13px 'Roboto-regular', sans-serif
+          color: #212121
+          text-align: center
+          position: relative
+          padding: 0 35px
+          margin-bottom: 10px
+          &:before
+            content: " "
+            display: block
+            height: 2px
+            width: 162px
+            background: #cecece
+            position: absolute
+            bottom: -19px
+        .price-content
+          padding: 25px 35px 5px
+          position: relative
+          span.aktia 
+            color: #ff3501
+            text-transform: uppercase
+            font: 11px "Roboto-medium", sans-serif
+            position: absolute
+            display: inline-block
+            top: 13px
+            left: 58px
+            display: none
+          h3.price
+            color: #212121
+            text-align: left
+            position: relative
+            display: block
+            span
+              font: 15px 'Roboto-regular', sans-serif
+              color: #858383
+              padding-left: 5px
+        .deals
+          background: #ffd409
+          margin: 0px 8px
+          span.aktia
+            display: block
+          h3.price
+            color: #ff0000
+            span
+              color: #ff0000
+
+        div.news
+          background: #4e545a
+          margin: 0px 8px
+          span.aktia
+            display: block
+            color: #ffd409
+            left: 76px
+          h3.price
+            color: #ffd409
+            span
+              color: #ffd409
+
+
+.catalog-menu
+  padding: 42px 38px
+  background: #4e545a
+  .block
+    width: 20%
+    float: left
+    ul 
+      list-style-type: disc
+      li 
+        color: #1383c2
+        margin-bottom: 24px
+        &:last-child
+          margin-bottom: 0px
+        a 
+          font: 13px 'Roboto-regular', sans-serif
+          color: #fff
+          &:hover
+            color: #f17e00
+
+@media(max-width: 1200px)
+  .catalog-goods .catalog-list li .good-info .price-content h3.price
+    font-size: 35px
+
+@media(max-width: 992px)
+  
+  .catalog-goods
+    .catalog-list 
+      text-align: center
+      vertical-align: top
+      li
+        width: 24.6%
+        border: 1px solid #cecece !important
+        float: none
+        display: inline-block
+        margin-bottom: 5px
+        .good-info
+          .good-title
+            &:before
+              display: none
+
+          .price-content 
+            padding: 25px 35px 5px !important
+            float: none
+            h3.price
+              font-size: 27px
+
+
+  .catalog-menu 
+    text-align: center
+    .block
+      width: 25%
+      float: none
+      display: inline-block
+      vertical-align: top
+      margin-bottom: 30px
+      ul
+        list-style-type: none
+        li 
+          text-align: left
+
+  .item .item-content 
+    .price-block 
+      h3
+        font-size: 31px
+        padding-top: 1px
+      .col-block
+        padding-top: 5px
+
+      p 
+        padding-top: 5px
+  
+    .list li:first-child
+      span
+        width: 100px
+
+@media(max-width: 768px)
+  .catalog-goods
+    .catalog-list 
+      text-align: center
+      li
+        width: 32%
+
+  .catalog-menu 
+    .block
+      margin-bottom: 38px
+      width: 100%
+      ul li 
+        text-align: center
+  .item .item-content
+    text-align: center
+    .list
+      display: inline-block 
+      li
+        text-align: left
+        &:first-child
+          span
+            width: 195px
+
+    .price-block h3, .col-block
+      margin-bottom: 15px
+      display: block
+      text-align: center
+
+    .add-to-basket
+      margin-bottom: 20px
+
+  .item .item-navigation ul 
+    text-align: center
+    li
+      display: inline-block
+      float: none
+      &:not(:last-child):before
+        display: none
+
+@media(max-width: 600px)
+  .catalog-goods
+    .catalog-list 
+      text-align: center
+      li
+        width: 49.5%
+
+@media(max-width: 500px)
+  .item .item-content .list
+    li:first-child
+      span 
+        width: 18px
+
+    li:nth-child(2)
+      span
+        margin-left: 22px
+        width: 142px
+
+    li:nth-child(3)
+      span 
+        width: 75px
+
+    li:nth-child(4)
+      span
+        width: 127px
+
+@media(max-width: 400px)
+  .catalog-goods
+    .catalog-list 
+      text-align: center
+      li
+        width: 70%

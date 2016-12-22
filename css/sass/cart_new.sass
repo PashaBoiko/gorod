@@ -1,0 +1,157 @@
+.cart-content
+  .title-block
+    padding: 18px 23px
+    overflow: hidden
+    border-bottom: 1px solid #cecece
+    h2
+      float: left
+      padding-left: 6px
+
+    .bread-crumb
+      float: right
+      padding-top: 10px
+      ul
+        overflow: hidden
+        li 
+          float: left
+          padding: 0 12px
+          position: relative
+          &:not(:last-child):before
+            content: " "
+            display: block
+            width: 9px
+            height: 1px
+            background: #1383c2
+            position: absolute
+            right: -4.5px 
+            top: 9px
+          a 
+            font: 13px 'Roboto-regular', sans-serif
+            color: #1383c2
+            text-decoration: underline
+          a.active
+            color: #4e545a
+            text-decoration: none
+
+  .cart-block
+    padding-top: 21px
+    ul
+      li.title
+        padding-bottom: 20px
+        div
+          font: 500 17px 'Roboto-medium', sans-serif
+          color: #212121
+          text-align: center
+        div.text-left
+          text-align: left 
+
+      li 
+        div
+          .cart-good-title
+            padding-left: 15px 
+          p 
+            padding: 21px 0
+            font: 14px 'Roboto-regular', sans-serif
+            color: #212121
+          a 
+            color: #ff0101
+            padding: 21px 0
+            font: 14px 'Roboto-regular', sans-serif
+            display: block
+            text-decoration: underline
+            padding-right: 33px
+
+        .col-block
+          display: inline-block
+          position: relative 
+          padding-top: 12px
+          .col
+            width: 30px
+            display: inline-block
+            height: 31px
+            border: 2px solid #e8e8e8
+            padding-left: 9px
+          button
+            height: 31px
+            width: 35px
+            background: #e8e8e8
+            color: #50565c
+            font-weight: bold
+            
+
+          button.left-button
+            border-radius: 4px 0px 0px 4px
+            margin-right: -4px
+
+          button.right-button
+            border-radius: 0px 4px 4px 0px
+            margin-left: -4px
+
+      li:not(.title)
+        margin-bottom: 26px
+
+  .button-block
+    .advertising
+      padding: 40px 24px
+      background: #ededed
+      p 
+        font: 15px 'Roboto-regular', sans-serif
+        color: #4e545a
+        a 
+          color: #1383c2
+          text-decoration: underline
+
+    .button-control
+      .clean-basket
+        color: #1383c2
+        text-decoration: underline
+        font: 15px 'Roboto-regular', sans-serif
+        display: block
+        text-align: right
+        padding-top: 52px
+
+      .button-cart
+        padding: 29px 45px
+        background: #ffd409
+        font: 15px 'Roboto-regular', sans-serif
+        margin-left: 30px
+        margin-top: 23px
+
+
+
+
+
+@media(max-width: 1200px)
+  .nav > li > a
+    padding: 10px 11px
+
+  .cart-content .button-block .button-control .button-cart
+    padding: 20px
+    margin-top: 31px
+
+
+@media(max-width: 991px)
+  .cart-content .button-block .button-control
+    text-align: center
+    .button-cart
+      margin: 20px 0
+    .clean-basket
+      text-align: center
+
+
+@media (max-width: 767px)
+  .cart-content .cart-block ul 
+    li.title
+      display: none
+    li div 
+      div
+        text-align: center
+      a 
+        padding-right: 0px
+
+
+
+
+
+
+

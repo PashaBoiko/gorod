@@ -1,0 +1,76 @@
+.info-page .info-page-content {
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 22px; }
+  .info-page .info-page-content .description h4 {
+    margin-bottom: 16px; }
+  .info-page .info-page-content .description ul {
+    margin-bottom: 13px; }
+    .info-page .info-page-content .description ul li {
+      margin-bottom: 9px;
+      font: 13px "Roboto-medium", sans-serif;
+      color: #212121; }
+  .info-page .info-page-content .description p {
+    margin-bottom: 9px;
+    font: 14px "Roboto-medium", sans-serif;
+    color: #212121; }
+    .info-page .info-page-content .description p span {
+      font-family: "Roboto-bold";
+      font-weight: bold; }
+  .info-page .info-page-content .advantage {
+    padding-top: 12px; }
+    .info-page .info-page-content .advantage h4 {
+      margin-bottom: 16px; }
+    .info-page .info-page-content .advantage .block {
+      min-height: 144px;
+      padding: 37px 33px 0px;
+      text-align: center;
+      color: #fff; }
+      .info-page .info-page-content .advantage .block p {
+        font: 500 17px "Roboto-medium", sans-serif;
+        margin-bottom: 13px; }
+      .info-page .info-page-content .advantage .block span {
+        font: 13px "Roboto-regular", sans-serif; }
+    .info-page .info-page-content .advantage .grey {
+      background: #4e545a; }
+    .info-page .info-page-content .advantage .blau {
+      background: #1383c2; }
+    .info-page .info-page-content .advantage .orange {
+      background: #f17301; }
+  .info-page .info-page-content .our-team {
+    padding-top: 24px; }
+    .info-page .info-page-content .our-team h4 {
+      padding-bottom: 16px; }
+    .info-page .info-page-content .our-team li {
+      padding-right: 15px; }
+      .info-page .info-page-content .our-team li img {
+        margin-bottom: 10px; }
+      .info-page .info-page-content .our-team li p, .info-page .info-page-content .our-team li div.team-name, .info-page .info-page-content .our-team li span {
+        font: 14px "Roboto-regular", sans-serif;
+        color: #212121;
+        margin-bottom: 20px; }
+      .info-page .info-page-content .our-team li div.team-name {
+        margin-bottom: 4px; }
+      .info-page .info-page-content .our-team li div.blau, .info-page .info-page-content .our-team li span.blau {
+        color: #1383c2; }
+    .info-page .info-page-content .our-team li.without-img {
+      padding: 36px 23px 0px; }
+      .info-page .info-page-content .our-team li.without-img p {
+        margin-bottom: 7px; }
+
+.footer {
+  margin-top: 28px; }
+
+@media(max-width: 1200px) {
+  .info-page .info-page-content .our-team li img {
+    width: 90%;
+    height: auto; }
+
+  .info-page .info-page-content .our-team li {
+    padding: 0px;
+    margin-bottom: 15px;
+    text-align: center; }
+    .info-page .info-page-content .our-team li p {
+      padding: 0 40px; } }
+
+/*# sourceMappingURL=info-page.css.map */

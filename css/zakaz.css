@@ -1,0 +1,39 @@
+.zakaz .zakaz-form {
+  padding-top: 20px;
+  padding-left: 26px; }
+  .zakaz .zakaz-form .form-group {
+    padding: 0 15px; }
+    .zakaz .zakaz-form .form-group label {
+      font: 13px "Roboro-regular", sans-serif;
+      color: #212121;
+      padding-bottom: 5px; }
+      .zakaz .zakaz-form .form-group label span {
+        color: #ff2626; }
+    .zakaz .zakaz-form .form-group input[type="text"], .zakaz .zakaz-form .form-group input[type="email"] {
+      height: 35px;
+      display: block;
+      width: 100%;
+      background: #ededed;
+      border: none; }
+    .zakaz .zakaz-form .form-group textarea {
+      height: 197px;
+      width: 100%;
+      background: #ededed;
+      border: none; }
+  .zakaz .zakaz-form .button-control button {
+    margin-left: 15px; }
+
+.footer {
+  margin-top: 73px; }
+
+@media(max-width: 400px) {
+  .zakaz .zakaz-form .form-group label {
+    display: block;
+    text-align: center; }
+
+  .zakaz .zakaz-form .button-control {
+    text-align: center; }
+    .zakaz .zakaz-form .button-control button {
+      margin-left: 0px; } }
+
+/*# sourceMappingURL=zakaz.css.map */
